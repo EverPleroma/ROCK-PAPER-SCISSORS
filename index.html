@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/10954eb96e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="mainContainer">
+        <!-- Time info -->
+        <div class="timeScoreBoard_container">
+            <div class="timeBoard_container">
+                <!-- <div class="time">
+                    <h1>Time</h1>
+                </div> -->
+                <div class="timeDisplay" id="timeDisplay">
+                    
+                </div>
+            </div>
+
+            <!-- Score info -->
+            <div class="scoreBoard_container">
+
+                <!-- player score -->
+                <div class="score_container">
+                    <div class="scoreDisplay" >
+                        <p id="playerScoreDisplay">You: 0</p>
+                    </div>
+                </div>
+
+                <!-- computer score -->
+                <div class="score_container">
+                    <div class="scoreDisplay" >
+                        <p id="computerScoreDisplay">Computer: 0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Move Chioces -->
+        <div class="moveChoices">
+            <!-- rock -->
+            <button class="move_container" id="rock">
+                <i class="fa-solid fa-hand-back-fist" ></i>
+            </button>
+
+            <div class="scissorsPaper_Container">
+                <!-- paper -->
+                <button class="move_container"  id="paper">
+                    <i class="fa-solid fa-hand"></i>
+                </button>
+                <!-- scissors -->
+                <button class="move_container"  id="scissors">
+                    <i class="fa-solid fa-hand-scissors"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Bottom Info -->
+        <div class="bottomInfo_container">
+            <!-- Decision info -->
+            <div class="decisionVerdict_container">
+                <!-- Computer chose -->
+                <div class="textDecision" id="computerDecision">
+
+                </div>
+                <!-- Score Verdict -->
+                <div class="textDecision" id="gameVerdict">
+
+                </div>
+            </div>
+
+            <div class="playButton" id="btn">
+                <button>Start Game</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="life.js"></script>
+</body>
+</html>
